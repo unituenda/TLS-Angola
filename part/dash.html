@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DashBoard</title>
+  <link rel="stylesheet" href="../css/dash.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <!-- <link rel="stylesheet" href="../fontawesome-free/css/all.min.css"> -->
+</head>
+
+<body>
+  <input type="checkbox" name="" id="nav-toogle">
+  <!-- /*SideBar🎮*/ -->
+  <div class="sidebar">
+    <div class="sidebar-brand">
+      <h2>
+        <span class="fas fa-people-carry"></span>
+        <span>DashBoard</span>
+      </h2>
+    </div>
+
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <span class="fas fa-igloo"></span>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="eventos.html">
+            <span class="fas fa-print"></span>
+            <span>Eventos</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="fas fa-user-tie"></span>
+            <span>Contabilista</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="fas fa-users-cog"></span>
+            <span>Funcionário</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- /*main-content 🎮*/ -->
+  <div class="main-content">
+    <!-- /*header 🎮*/ -->
+    <header>
+      <h2 class="header-title">
+        <label for="nav-toogle">
+          <span class="fas fa-bars"></span>
+        </label>
+        Dashboard
+      </h2>
+
+      <div class="search-wrapper">
+        <span class="fas fa-search"></span>
+        <input type="search" placeholder="Pesquisar">
+      </div>
+
+      <div class="user-wrapper">
+        <img src="../img/user.png" height="40px" width="40px" alt="Usuário">
+        <div>
+          <h4>Simon Joseph</h4>
+          <small>Cliente</small>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- /*main 🎮*/ -->
+    <main>
+      <div class="cards">
+        <div class="card-single">
+          <div>
+            <h1>9</h1>
+            <span>Funcionário</span>
+          </div>
+          <div>
+            <span class="fas fa-users-cog"></span>
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div>
+            <h1>1</h1>
+            <span>Contablista</span>
+          </div>
+          <div>
+            <span class="fas fa-users"></span>
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div>
+            <h1>9</h1>
+            <span>Factura</span>
+          </div>
+          <div>
+            <span class="fas fa-tasks"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="recent-grid">
+        <div class="projects">
+          <div class="card">
+            <div class="card-header">
+              <h3>Projecto recentes</h3>
+              <button>
+                veja todos
+                <span class="fa fa-arrow-right"></span>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table width="100%">
+                <thead>
+                  <tr>
+                    <td>Projecto</td>
+                    <td>Departamento</td>
+                    <td>Status</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>UI/UX Desgin</td>
+                    <td>UI Team</td>
+                    <td>
+                      <span class="status pink"></span>
+                      rever
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Web development</td>
+                    <td>UI Team</td>
+                    <td>
+                      <span class="status orange"></span>
+                      rever
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Depa</td>
+                    <td>UI Team</td>
+                    <td>
+                      <span class="status blue"></span>
+                      rever
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TODOS</td>
+                    <td>UI Team</td>
+                    <td>
+                      <span class="status pink"></span>
+                      rever
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>NoJA</td>
+                    <td>UI Team</td>
+                    <td>
+                      <span class="status orange"></span>
+                      rever
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>MUsic</td>
+                    <td>UI Team</td>
+                    <td>
+                      <span class="status blue"></span>
+                      rever
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="customers">
+          <div class="card">
+            <div class="card-header">
+              <h3>Novos funcionários</h3>
+              <button>
+                veja todos
+                <span class="fa fa-arrow-right"></span>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="customer">
+                <div class="info">
+                  <img src="../img/user.png" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>Simon joseph</h4>
+                    <small>CTO</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="fas fa-user-circle"></span>
+                  <span class="fas fa-comment"></span>
+                  <span class="fas fa-phone"></span>
+                </div>
+              </div>
+
+              <div class="customer">
+                <div class="info">
+                  <img src="../img/user.png" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>Simon joseph</h4>
+                    <small>CTO</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="fas fa-user-circle"></span>
+                  <span class="fas fa-comment"></span>
+                  <span class="fas fa-phone"></span>
+                </div>
+              </div>
+
+              <div class="customer">
+                <div class="info">
+                  <img src="../img/user.png" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>Simon joseph</h4>
+                    <small>CTO</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="fas fa-user-circle"></span>
+                  <span class="fas fa-comment"></span>
+                  <span class="fas fa-phone"></span>
+                </div>
+              </div>
+
+              <div class="customer">
+                <div class="info">
+                  <img src="../img/user.png" width="40px" height="40px" alt="">
+                  <div>
+                    <h4>Simon joseph</h4>
+                    <small>CTO</small>
+                  </div>
+                </div>
+                <div class="contact">
+                  <span class="fas fa-user-circle"></span>
+                  <span class="fas fa-comment"></span>
+                  <span class="fas fa-phone"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+  </div>
+</body>
+
+</html>

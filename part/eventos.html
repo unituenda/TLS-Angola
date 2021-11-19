@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DashBoard</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/dash.css">
+  <link rel="stylesheet" href="../css/eventos.css">
+  <!-- <link rel="stylesheet" href="../fontawesome-free/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body>
+  <input type="checkbox" name="" id="nav-toogle">
+  <!-- /*SideBar🎮*/ -->
+  <div class="sidebar">
+    <div class="sidebar-brand">
+      <h2>
+        <span class="fas fa-people-carry"></span>
+        <span>DashBoard</span>
+      </h2>
+    </div>
+
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <span class="fas fa-igloo"></span>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="eventos.html">
+            <span class="fas fa-print"></span>
+            <span>Eventos</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="fas fa-user-tie"></span>
+            <span>Usuários</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="fas fa-users-cog"></span>
+            <span>Blog</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- /*main-content 🎮*/ -->
+  <div class="main-content">
+    <!-- /*header 🎮*/ -->
+    <header>
+      <h2 class="header-title">
+        <label for="nav-toogle">
+          <span class="fas fa-bars"></span>
+        </label>
+        Dashboard
+      </h2>
+
+      <!-- <div class="search-wrapper">
+        <span class="fas fa-search"></span>
+        <input type="search" placeholder="Pesquisar">
+      </div> -->
+
+      <div class="user-wrapper">
+        <img src="../img/user.png" height="40px" width="40px" alt="Usuário">
+        <div>
+          <h4>Simon Joseph</h4>
+          <small>Mentor</small>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- /*main 🎮*/ -->
+    <main>
+      <div class="cards">
+        <div class="card-single">
+          <div>
+            <h1>9</h1>
+            <span>Eventos</span>
+          </div>
+          <div>
+            <span class="fas fa-users-cog"></span>
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div>
+            <h1>1</h1>
+            <span>Usuários</span>
+          </div>
+          <div>
+            <span class="fas fa-users"></span>
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div>
+            <h1>9</h1>
+            <span>Blog</span>
+          </div>
+          <div>
+            <span class="fas fa-tasks"></span>
+          </div>
+        </div>
+      </div>
+
+      <section class="produtos">
+
+        <div class="produto-h1">
+          <a class="adicionar-produtos" href="#" data-toggle="modal" data-target="#examplesModal"
+            >Adicionar Evento</a>
+
+          <!--  -->
+          <div class="modal fade" id="examplesModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cadastrar evento</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="validationDefault01">Nome:</label>
+                      <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="validationDefault02">Localização:</label>
+                      <input type="text" class="form-control" id="validationDefault02" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="validationDefault03">Data:</label>
+                      <input type="date" class="form-control" id="validationDefault03" required>
+                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-primary">Atualizar</button>
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <ul>
+          <li class="produtos-item">
+            <!-- <img src="../img/tls-image.jpg" alt="Eventos tls Angola"> -->
+            <ul>
+              <li><span>Nome</span> Angola e os investimentos</li>
+              <li><span>Localização</span> Luanda | Angola</li>
+              <li><span>Data</span> 10/Nov/2021</li>
+            </ul>
+            <a href="#" data-toggle="modal" data-target="#editModal">Editar</a>
+          </li>
+
+          <li class="produtos-item">
+            <!-- <img src="../img/tls-image.jpg" alt="Eventos tls Angola"> -->
+            <ul>
+              <li><span>Nome</span> Capuccino</li>
+              <li><span>Localização</span> Luanda | Angola</li>
+              <li><span>Data</span> 10/Nov/2021</li>
+            </ul>
+            <a href="#" data-toggle="modal" data-target="#editModal">Editar</a>
+          </li>
+
+          <li class="produtos-item">
+            <!-- <img src="../img/tls-image.jpg" alt="Eventos tls Angola"> -->
+            <ul>
+              <li><span>Nome</span> Capuccino</li>
+              <li><span>Localização</span> Luanda | Angola</li>
+              <li><span>Data</span> 10/Nov/2021</li>
+            </ul>
+            <a href="#" data-toggle="modal" data-target="#editModal">Editar</a>
+          </li>
+
+          <li class="produtos-item">
+            <!-- <img src="../img/tls-image.jpg" alt="Eventos tls Angola"> -->
+            <ul>
+              <li><span>Nome</span> Capuccino</li>
+              <li><span>Localização</span> Luanda | Angola</li>
+              <li><span>Data</span> 10/Nov/2021</li>
+            </ul>
+            <a href="#" data-toggle="modal" data-target="#editModal">Editar</a>
+          </li>
+
+          <li class="produtos-item">
+            <!-- <img src="../img/tls-image.jpg" alt="Eventos tls Angola"> -->
+            <ul>
+              <li><span>Nome</span> Capuccino</li>
+              <li><span>Localização</span> Luanda | Angola</li>
+              <li><span>Data</span> 10/Nov/2021</li>
+            </ul>
+            <a href="#" data-toggle="modal" data-target="#editModal">Editar</a>
+          </li>
+
+          <li class="produtos-item">
+            <!-- <img src="../img/tls-image.jpg" alt="Eventos tls Angola"> -->
+            <ul>
+              <li><span>Nome</span> Capuccino</li>
+              <li><span>Localização</span> Luanda | Angola</li>
+              <li><span>Data</span> 10/Nov/2021</li>
+            </ul>
+            <a href="#" data-toggle="modal" data-target="#editModal">Editar</a>
+
+            <!--  -->
+          <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cadastrar Eventos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="validationDefault01">Nome:</label>
+                      <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="validationDefault02">Localização:</label>
+                      <input type="text" class="form-control" id="validationDefault02" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="validationDefault03">Data:</label>
+                      <input type="date" class="form-control" id="validationDefault03" required>
+                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-primary">Atualizar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+          </li>
+        </ul>
+      </section>
+
+
+    </main>
+  </div>
+
+  <!-- jquery js -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- popper js -->
+  <script src="../js/popper.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- owl carousel js -->
+  <script src="../js/owl.carousel.min.js"></script>
+  <!-- ScrollIt js -->
+  <script src="../js/scrollIt.min.js"></script>
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
