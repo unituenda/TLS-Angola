@@ -188,7 +188,7 @@ ul {
   padding: 150px 0;
   position: relative;
   z-index: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/tls-image.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/tls-image.jpg);
   /* background-image: linear-gradient(rgba(247, 218, 218, 0.5), rgba(238, 235, 235, 0.5)), url('../img/tls-image.jpg'); */
   background-position: center top;
   background-size: cover;
@@ -497,7 +497,7 @@ px
   padding: 150px 0;
   position: relative;
   z-index: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/tls-parti.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/tls-parti.jpg);
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
